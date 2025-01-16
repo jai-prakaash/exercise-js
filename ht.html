@@ -6,6 +6,49 @@
     <title>Document</title>
 </head>
 <body>
-    KLKJLJ
+   
+    <button onclick=" console.log(quantity);
+     " >show quantity </button> 
+
+    <button  onclick=" if (quantity >= 10) {console.log('you can not add more than 10 items')} else {quantity++; console.log(quantity)}  " >add to cart </button>
+    
+    
+
+    <button onclick=" if (quantity+=2 >= 10) {console.log('you can not add more than 10 items')} else {quantity+=2; console.log(quantity)} " >+2 </button> 
+
+
+
+    <button  onclick="if (quantity+=3 >= 10) {console.log('you can not add more than 10 items')} else {quantity+=3; console.log(quantity)}"  >+3  </button> 
+
+    <button  onclick="if (quantity+=4 >= 10) {console.log('you can not add more than 10 items')} else {quantity+=4; console.log(quantity)}"   >+4</button> 
+
+    <button  onclick="if (quantity+=5 >= 10) {console.log('you can not add more than 10 items')} else {quantity+=5; console.log(quantity)}"  >+5</button> 
+
+
+    <button  onclick="quantity=0;
+    console.log(quantity);
+    "  >reset</button> 
+
+
+
+    <button onclick="if (--quantity <= 0) {console.log('CART CANT BE EMPTY')} else {quantity-=1 ; console.log(quantity)}"> remove      
+    </button>
+    <button  onclick="if (quantity-=2 <= 0) {console.log('CART CANT BE EMPTY')} else {quantity-=2 ; console.log(quantity)}"  >-2</button> 
+    <button  onclick="if (quantity-=3 <= 0) {console.log('CART CANT BE EMPTY')} else {quantity-=3 ; console.log(quantity)}"  >-3</button> 
+
+
+    <script>
+
+        let quantity = 0;
+      
+        console.log(quantity);
+        
+       
+
+
+
+    </script>
+
+
 </body>
 </html>
