@@ -44,4 +44,5 @@ function updateQuantity(num) {
     }
 }
 
+
 showQuantity();  // Display quantity on page load
