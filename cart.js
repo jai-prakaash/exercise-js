@@ -1,48 +1,22 @@
-// let quantity = 0;
+let grade="";
 
-// function showQuantity(){
-//     document.querySelector('.cartview').innerHTML = `cart quantity is ${quantity}`;
-// }
+let  score= parseInt( prompt("givebumer"));
 
-// showQuantity() ;    // to show the quantity on page load
+if(score>80 && score<=100 ){
+ grade="A";}
+ else if (score >=70 && score<=79) {
+ grade="B";}
+  else if (score >=60 && score<=69){
+ grade="C";}
+ else if (score >=50 && score<=59){
+ grade="D";}
+else if (score >=0 && score <=49 ){
+  grade="F";}
+  else {grade="grade is suspicious"}
 
-// function add(num){
-//   if (quantity+ num > 10) {
-//     alert('cart quantiy can not be more than 10 items');
-//   } else {
-//     quantity+=num;
-//     showQuantity();
-//   }
-// };
-
-
-
-// function remove(num){
-//   if (quantity-num < 0) {
-//     alert('CART CANT BE EMPTY');
-//   } else {
-//     quantity-=num;
-//     showQuantity();
-//   }
-// };
+console.log(grade);
+                    
 
 
-let quantity = 0;
-
-function showQuantity() {
-    document.querySelector('.cartview').innerHTML = `Cart quantity is ${quantity}`;
-}
-
-function updateQuantity(num) {
-    if (quantity + num < 0) {
-        alert('Cart cannot be empty');
-    } else if (quantity + num > 10) {
-        alert('Cart quantity cannot be more than 10 items');
-    } else {
-        quantity += num;
-        showQuantity();
-    }
-}
 
 
-showQuantity();  // Display quantity on page load
